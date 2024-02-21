@@ -1,0 +1,105 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    border: none
+    outline: none
+
+html
+    scroll-behavior: smooth
+
+body
+    min-height: 100vh
+    color: white
+    font-size: 14px
+    background-color: #fff
+    color: #000
+    font-family: 'Montserrat', sans-serif
+    display: flex
+    flex-direction: column
+    scroll-behavior: smooth
+    position: relative
+    z-index: 1
+
+    &.active
+        overflow: hidden
+
+img
+    max-width: 100%
+
+.container
+    max-width: 1130px
+    width: 100%
+    padding: 0 15px
+    margin: 0 auto
+
+h1
+    font-size: 45px
+    font-weight: 600
+    margin: 4px 0 16px
+
+h2
+    font-size: 46px
+    line-height: 120%
+    margin: 0 0 60px
+
+a,
+button
+    color: #000
+    text-decoration: none
+    transition: all ease .2s
+    background-color: transparent
+    &:active
+        transform: scale(.98)
+
+.wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.btn
+    display: block
+    font-size: 18px
+    font-style: normal
+    font-weight: 400
+    line-height: 120%
+    letter-spacing: 0.16px
+    border: 1px solid white
+    color: white
+    padding: 18px 22px 17px
+    text-align: center
+    border-radius: 30px
+    margin-bottom: 12px
+
+    &:hover,
+    &:active
+        background-color: #fff
+        color: #000
+
+    &_2
+        background-color: #fff
+        color: #000
+        &:hover,
+        &:active
+            background-color: transparent
+            color: white
+
+    &_3
+        background-color: #222
+        border-color: #222
+        color: white
+        &:hover,
+        &:active
+            color: white
+            background-color: rgba(#fff, .1)
+
+section
+    padding: 60px 0
+
+@media screen and ( max-width: 1000px )
+    h1
+        font-size: 20px
+
+    h2 
+        font-size: 22px
+
