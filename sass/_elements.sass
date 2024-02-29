@@ -21,14 +21,14 @@ body
     position: relative
     z-index: 1
 
-    &.active
+    &.is_active
         overflow: hidden
 
 img
     max-width: 100%
 
 .container
-    max-width: 1130px
+    max-width: 1180px
     width: 100%
     padding: 0 15px
     margin: 0 auto
@@ -36,7 +36,7 @@ img
 h1
     font-size: 45px
     font-weight: 600
-    margin: 4px 0 16px
+    margin: 4px 0 10px
 
 h2
     font-size: 46px
@@ -51,6 +51,22 @@ button
     background-color: transparent
     &:active
         transform: scale(.98)
+
+label
+    display: block
+    font-size: 16px
+    font-weight: 600
+    color: #3a3a3b
+    margin: 0 0 2px
+
+input
+    display: block
+    width: 100%
+    border-radius: 5px
+    height: 50px
+    border: 1px solid #000
+    padding: 0 15px
+    margin-bottom: 20px
 
 .wrap
     display: flex
@@ -100,6 +116,5 @@ section
     h1
         font-size: 20px
 
-    h2 
+    h2
         font-size: 22px
-

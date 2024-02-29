@@ -15,6 +15,13 @@
         margin: 0 auto
         line-height: 130%
 
+    .btn
+        display: inline-block
+        min-width: 200px
+        margin-top: 30px
+        &:hover
+            color: black
+
 .instruction
     .title
         align-items: flex-start
@@ -44,6 +51,7 @@
             border: 1px solid #000
             position: relative
             z-index: 1
+            background-color: #fff
             &::before
                 content: counter(custom-counter)
                 counter-increment: custom-counter
@@ -56,6 +64,12 @@
                 right: calc( 100% - 51px )
                 z-index: 100
 
+            &:nth-child(2)
+                left: -10px
+
+            &:nth-child(3)
+                left: -20px
+
         a
             display: block
             text-decoration: underline
@@ -65,19 +79,23 @@
                 text-decoration: none
                 opacity: 1
 
+@import 'slick'
+
+
 .products
     margin: 60px 0
     background-color: #000
     color: white
 
 .nft
-    padding: 53px 50px 41px
+    padding: 33px 30px 31px
     border: 1px solid rgba(white, .5)
     background-color: rgba(#101010, .5)
     border-radius: 40px
-    width: 525px
+    width: 370px
     position: relative
     z-index: 1
+    margin: 0 8px
     &::after
         content: ''
         display: block
@@ -96,26 +114,26 @@
         pointer-events: none
 
     &__caption
-        font-size: 18px
+        font-size: 16px
 
     &__price
-        font-size: 48px
+        font-size: 40px
         font-weight: 700
 
     &__heading
-        min-height: 130px
+        min-height: 105px
         font-size: 26px
         font-weight: 600
         margin: 0 0 30px
 
     &__time
         color: rgba(white, .5)
-        padding: 3px 0 3px 36px
+        padding: 3px 0 3px 34px
         background-image: url('../img/ic-time.svg')
         background-repeat: no-repeat
         background-size: contain
         background-position: center left
-        margin: 20px 0 40px
+        margin: 15px 0 30px
 
 .about
     padding-bottom: 150px
@@ -229,3 +247,5 @@
             &:first-child
                 p
                     padding: 0 20px
+
+@import 'modal'
